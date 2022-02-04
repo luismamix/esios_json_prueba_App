@@ -40,36 +40,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    /*        txtprecios = findViewById(R.id.txt_precios);
-
-        LocalDate fechaHOY = LocalDate.now();
-        LocalDate fechaAYER = LocalDate.now().minusDays(1);
-        LocalDate fechaMAÑANANA =  LocalDate.now().plusDays(1);
-        LocalTime horaINICIO = LocalTime.of(0,0,0);
-        LocalTime horaFIN =  LocalTime.of(23,0,0);
-        LocalDateTime start_date = LocalDateTime.of(fechaMAÑANANA, horaINICIO);
-        LocalDateTime end_date = LocalDateTime.of(fechaMAÑANANA, horaFIN);
-
-        PreciosLuzV1 canariasHOY = new PreciosLuzV1(start_date,end_date,fechaMAÑANANA,"1001","hour","8741");
-        canariasHOY.conexionESIOSREE();
-
-        DecimalFormat formateador = new DecimalFormat("####.###");
-        List<Double> precios = canariasHOY.getPrecios();
-        String listado ="";
-        int i= 0;
-        for (double valor: precios) {
-            listado += i +"h : " + formateador.format(valor) + "€ Kwh \n";
-            i++;
-        }
-        String fechas = "start_date: " + canariasHOY.getStart_date().toString() + "\n" +
-                        "end_date: " + canariasHOY.getEnd_date().toString() + "\n";
-        txtprecios.setText("LISTADO PRECIOS : " + canariasHOY.getGeo_name() +" "+ canariasHOY.getDia().format(DateTimeFormatter.ofPattern("d/M/yyyy")) + "\n" +
-                            "Precio Actual: " + formateador.format(canariasHOY.getPrecioACTUAL()) + "€ Kwh" + "\n" +
-                            "Precio Mínimo : " + canariasHOY.getHoraprecioMIN() + "h : " + formateador.format(canariasHOY.getPrecioMIN()) + "€ Kwh" + "\n" +
-                            "Precio Máximo : " + canariasHOY.getHoraprecioMAX() + "h : " + formateador.format(canariasHOY.getPrecioMAX())  + "€ Kwh" + "\n" +
-                            "Precio Medio: " + formateador.format(canariasHOY.getPrecioMEDIA()) + "€ Kwh" + "\n" +
-                            listado);*/
-
         miRecicler = findViewById(R.id.RV1);
         miRecicler.setHasFixedSize(true);
         miRecicler.setLayoutManager(new LinearLayoutManager(this));

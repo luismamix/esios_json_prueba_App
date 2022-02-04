@@ -329,10 +329,6 @@ public class Ventana_MostrarDetalle extends AppCompatActivity {
         String title = "Precios Luz";
         String[] titulos = {"Precio MAX", " Precio MIN", "Precios Luz"} ;
         List<Integer> colors = new ArrayList<>();
-       /* List<Integer> colors2 = new ArrayList<>();
-        colors2.add(Color.RED);
-        colors2.add(Color.GREEN);
-        colors2.add(Color.parseColor("#303030"));*/
 
         //fit the data into a bar
         for (int i = 0; i < precios.size(); i++) {
