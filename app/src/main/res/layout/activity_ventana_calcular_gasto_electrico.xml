@@ -1,0 +1,3162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7F68E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C7F68E"
+        android:orientation="vertical"
+        tools:context=".Ventana_Calcular_Gasto_Electrico">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bconsumohogar"
+            android:layout_width="fill_parent"
+            android:layout_height="225dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#303030"
+            app:cardCornerRadius="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="fill_parent"
+                android:layout_height="205dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#C7F68E"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:srcCompat="@drawable/fotoconsumohogar" />
+
+                    <TextView
+                        android:id="@+id/v1_titulo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Gasto Eléctrico Hogar"
+                        android:textColor="#303030"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/v1_subtitulo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="...Añade electrodoméstico..."
+                        android:textColor="#303030"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <!-- ATRIBUIR icons created by Smashicons - Flaticon-->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="lavavajillas"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_14"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_lavavajillas" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="246"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_14"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <!-- pressed
+                          <Button
+                              android:id="@+id/b_incr_14"
+                              android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              app:srcCompat="@drawable/ic_menu_add"
+                              />
+                         -->
+                          <ImageButton
+                              android:id="@+id/b_incr_14"
+                              android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/b_incr" />
+
+                          <ImageButton
+                              android:id="@+id/b_dcr_14"
+                              android:layout_width="40dp"
+                              android:layout_height="40dp"
+                              android:background="@drawable/b_decr" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_21"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_22"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_22"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="nevera"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_24"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_nevera" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_23"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_23"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_24"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_24"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="24"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_31"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_32"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_32"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="vitroceramica"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_34"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/layout_vitroceramica" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_33"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_33"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rbg_pot_33"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_33_op_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="sans-serif"
+                            android:text="900"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_33_op_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="1500"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_33_op_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="2000"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_33_op_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text=""
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_34"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_34"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_34"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_41"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_42"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_42"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="congelador"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_44"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_congelador" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_43"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_43"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_44"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_44"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="24"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_51"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_52"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_52"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="lavadora"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_54"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/layout_lavadora" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_53"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_53"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rbg_pot_53"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_53_op_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="sans-serif"
+                            android:text="143"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_53_op_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="365"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_53_op_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="652"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_53_op_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_54"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_54"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_54"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_54"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_61"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_62"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_62"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="horno"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_64"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/layout_horno" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_63"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_63"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rbg_pot_63"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_63_op_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="sans-serif"
+                            android:text="800"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_63_op_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="1200"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_63_op_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="652"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_63_op_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_64"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_64"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_64"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_64"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_71"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_72"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_72"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="radiador"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_74"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/layout_radiador" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_73"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_73"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="300"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rbg_pot_73"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_73_op_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="sans-serif"
+                            android:text="800"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_73_op_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="1200"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_73_op_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="2000"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rb_pot_73_op_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_74"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_74"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_74"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_74"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_81"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_81"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_82"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_82"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="aspiradora"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_84"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_aspiradora" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_83"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_83"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="650"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_84"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_84"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_84"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_84"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_91"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_91"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_92"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_92"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="microondas"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_94"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_microondas" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_93"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_93"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="800"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_94"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_94"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_94"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_94"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- TV -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_101"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_101"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_102"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_102"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="television"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_104"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_tv" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_103"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_103"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="150"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_104"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_104"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_104"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_104"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- Bombilla normal -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_111"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_111"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_112"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_112"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="bombilla_normal"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_114"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_bombilla_normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_113"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_113"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="100"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_114"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_114"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_114"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_114"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- Bombilla led -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_121"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_121"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_122"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_122"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="bombilla_led"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_124"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_bombilla_ecologica" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_123"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_123"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="14"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_124"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_124"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_124"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_124"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- Portatil -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_131"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_131"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_132"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_132"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="portatil"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_134"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_portatil" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_133"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_133"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_134"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_134"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_134"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_134"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- PC -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_141"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_141"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_142"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_142"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="pc"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_144"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_pc" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_143"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_143"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="16"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_144"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_144"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_144"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_144"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- videoconsola -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_151"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_151"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_152"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_152"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="videoconsola"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_154"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_videoconsola" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_153"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_153"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="23"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_154"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_154"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_154"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_154"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <!-- Equipo Sonido -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_tablerow"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_uds_161"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Uds."
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_uds_161"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_add_162"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Añadir"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_nombre_electr_162"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="equipo_sonido"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/b_add_electr_164"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_equipo_musica" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/lbl_pot_163"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Pot. W"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pot_163"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="14"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_tiempo_164"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="Horas"
+                        android:textColor="#FFEBEFE6"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tiempo_164"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFEBEFE6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/b_incr_164"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_incr" />
+
+                            <ImageButton
+                                android:id="@+id/b_dcr_164"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/b_decr" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Boton calcular consumo hogar -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bcalcularconsumohogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#9F70F3"
+            app:cardCornerRadius="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/miLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEFE6"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imghogar"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/contabilidad" />
+
+                <TextView
+                    android:id="@+id/txtcalcularconsumohogar"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Calcular Consumo Hogar"
+                    android:textColor="#303030"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Boton calcular consumo hogar -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/brecargarconsumohogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#9F70F3"
+            app:cardCornerRadius="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/miLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEFE6"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgrefresh"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/reload" />
+
+                <TextView
+                    android:id="@+id/txtrecargarconsumohogar"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Volver a calcular Consumo"
+                    android:textColor="#303030"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/resumen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEFE6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lbl_electrodomesticos_encendidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Electrodomésticos encendidos"
+                android:textColor="#303030"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_electrodomesticos_encendidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:textColor="#303030"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lbl_gasto_electrico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Gasto Eléctrico"
+                android:textColor="#303030"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consumo_diario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Consumo diario: "
+                android:textColor="#303030"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_gasto_diario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Gasto diario: "
+                android:textColor="#303030"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_precio_medio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Precio Medio: "
+                android:textColor="#303030"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Dia: "
+                android:textColor="#303030"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_tarifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Tarifa: "
+                android:textColor="#303030"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bguardarconsumohogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#9F70F3"
+            app:cardCornerRadius="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/miLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEFE6"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsave"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/save" />
+
+                <TextView
+                    android:id="@+id/txtsaveconsumohogar"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Guardar Consumo Hogar"
+                    android:textColor="#303030"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nombre_tarifa"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Tarifa PVPC (Precio Voluntario Pequeño Consumidor) 2.0TD"
+                android:textColor="#303030"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/v4_bsalir"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/b_salir" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

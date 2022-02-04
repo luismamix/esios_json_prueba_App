@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable-v24/shape_tablerow.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable/shape.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable/shape_1er_fila.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable/shape_fila.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable/shape_ult_fila.xml" value="0.2203125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_dummy.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_calcular_gasto_electrico.xml" value="0.21" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_gasto_electrico_dummy.xml" value="0.25" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_gasto_electrico_original.xml" value="0.2442367601246106" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_mostrar_detalle.xml" value="0.25" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_seleccionar_tarifa.xml" value="0.25" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_seleccionar_tarifa_COPIA.xml" value="0.1" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/lista_datos.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/mierder.xml" value="0.1897644927536232" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1125" />
+        <entry key="app/src/main/res/drawable-v24/b_decr.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/b_incr.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/b_salir.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_aspiradora.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_bombilla_ecologica.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_bombilla_normal.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_congelador.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_equipo_musica.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_horno.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_lavadora.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_lavavajillas.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable-v24/layout_microondas.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_nevera.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_pc.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_portatil.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_radiador.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_tv.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_videoconsola.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/layout_vitroceramica.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/shape_tablerow.xml" value="0.40520833333333334" />
+        <entry key="app/src/main/res/drawable/b_guardar_gastoelectrico.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/lavavajillas.xml" value="0.246875" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/shape_1er_fila.xml" value="0.40520833333333334" />
+        <entry key="app/src/main/res/drawable/shape_pushed.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/shape_ult_fila.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.286231884057971" />
+        <entry key="app/src/main/res/layout/activity_ventana_calcular_gasto_electrico.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_ventana_mostrar_detalle.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_ventana_mostrar_gastos_guardados.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_ventana_seleccionar_tarifa.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/b_decr.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/b_incr.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/lista_datos.xml" value="0.2817028985507246" />
+        <entry key="app/src/main/res/layout/toast_personalizado.xml" value="0.35435435435435436" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

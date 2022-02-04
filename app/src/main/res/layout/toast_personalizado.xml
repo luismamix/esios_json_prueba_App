@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tostada"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_tablerow">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/save" />
+
+    <TextView
+        android:id="@+id/txt_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Datos Guardados"
+        android:textColor="#EBEFE6"
+        android:textSize="24sp" />
+</LinearLayout>

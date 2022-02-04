@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bconsumohogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#9F70F3"
+        app:cardCornerRadius="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/miLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#303030"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgDia"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_grey_menu_alarm" />
+
+            <TextView
+                android:id="@+id/txt_calcular_consumo_hogar"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Textview"
+                android:textColor="#EBEFE6"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
