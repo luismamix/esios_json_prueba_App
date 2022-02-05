@@ -2,6 +2,7 @@ package com.example.esios_json_prueba_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -23,7 +24,6 @@ import java.util.List;
 
 public class Ventana_Mostrar_Gastos_guardados extends AppCompatActivity {
     private ImageButton v2_bsalir;
-    private TextView txt_salida;
     private SQLiteDatabase db;
     private TableLayout tabla;
 
@@ -37,7 +37,9 @@ public class Ventana_Mostrar_Gastos_guardados extends AppCompatActivity {
         v2_bsalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+                //finish();
             }
         });
 
@@ -61,7 +63,7 @@ public class Ventana_Mostrar_Gastos_guardados extends AppCompatActivity {
                 filas++;
             }while(c.moveToNext());
         }else{
-            txt_salida.setText("No hay resultados!!!");
+            System.out.println("No hay resultados!!!");
         }
 
         // ## Rellenar el TableLayout (construir filas y celdas) con los Datos.
@@ -122,7 +124,7 @@ public class Ventana_Mostrar_Gastos_guardados extends AppCompatActivity {
                     fila.addView(celda);
                 } else if(j == cabeceras.length-1){ //si es la ult columna metemos un boton a la fila , al hacer click borra el gasto y borra la fila del la tabla.
                    Button b = new Button(getApplicationContext());
-                    b.setBackgroundResource(R.drawable.b_decr);
+                    b.setBackgroundResource(R.drawable.b_eliminar);
                     b.setLayoutParams(new TableRow.LayoutParams(125, 125));
                     fila.addView(b);
                     b.setOnClickListener(new View.OnClickListener() {

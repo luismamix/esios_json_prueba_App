@@ -1,6 +1,8 @@
 package com.example.esios_json_prueba_app;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,11 +13,13 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import java.util.List;
 
 public class Adaptador extends RecyclerView.Adapter<Adaptador.Item>{
     private List<String> dias;
     private int posicion_seleccionada =-1;
+    private SQLiteDatabase db;
 
     public Adaptador(List<String> dias) {
         this.dias = dias;
@@ -31,6 +35,24 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.Item>{
 
     @Override
     public void onBindViewHolder(@NonNull Item holder, int position) {
+
+        if(position == 0){
+            //comprobar si hay datos guardados. Sino los hay hace desaparecer el  boton "Datos Guardados"
+            BaseDatosHelper bdhelper  = new BaseDatosHelper(holder.itemView.getContext(),"MI_GASTO_ELECTRICO",null,1);
+            db = bdhelper.getReadableDatabase();
+            Cursor c =db.rawQuery("SELECT COUNT(*) FROM GASTO_ELECTRICO", null);
+            c.moveToFirst();
+            int count = c.getInt(0);
+            System.out.println( "Gastos guardados: " + count);
+            if( count > 0){
+                holder.itemView.setVisibility(View.VISIBLE);
+            } else{
+                holder.itemView.setVisibility(View.GONE);
+            }
+            c.close();
+        }
+
+
         holder.textDia.setText(dias.get(position));
         holder.cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,8 +65,6 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.Item>{
         if(posicion_seleccionada == position){
             holder.imgDia.setImageResource(R.drawable.ic_menu_alarm);
             holder.textDia.setTextColor(Color.parseColor("#C7F68E"));
-
-
             Parametros parametros = new Parametros();
             parametros.setDia(holder.textDia.getText().toString());
             if(holder.textDia.getText().toString().equals("Gastos guardados")){

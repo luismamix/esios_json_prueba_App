@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Ventana_seleccionar_tarifa extends AppCompatActivity {
+
     private TextView v2_titulo;
     private TextView textcanarias;
     private TextView textbaleares;
@@ -162,7 +162,9 @@ public class Ventana_seleccionar_tarifa extends AppCompatActivity {
         v2_bsalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+                //finish();
             }
         });
 

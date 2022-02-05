@@ -50,12 +50,13 @@ public class MainActivity extends AppCompatActivity {
     private List<String> dias(){
 
         List<String> dias = new ArrayList<>();
+        dias.add("Gastos guardados");
         dias.add("Ayer");
         dias.add("Hoy");
         //si estas en el rango de 20h a 23:59h
         if(LocalTime.now().getHour() >= 20 && LocalTime.now().getHour() < 24)
             dias.add("Mañana");
-        dias.add("Gastos guardados");
+
 
         return dias;
     }

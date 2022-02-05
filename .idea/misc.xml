@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable-v24/b_eliminar.xml" value="0.1125" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable-v24/shape_tablerow.xml" value="0.2203125" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
@@ -16,6 +17,7 @@
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_gasto_electrico_dummy.xml" value="0.25" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_gasto_electrico_original.xml" value="0.2442367601246106" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_mostrar_detalle.xml" value="0.25" />
+        <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_mostrar_gastos_guardados.xml" value="0.18" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_seleccionar_tarifa.xml" value="0.25" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/activity_ventana_seleccionar_tarifa_COPIA.xml" value="0.1" />
         <entry key="..\:/Users/luism/AndroidStudioProjects/esios_json_prueba_App/app/src/main/res/layout/lista_datos.xml" value="0.20416666666666666" />

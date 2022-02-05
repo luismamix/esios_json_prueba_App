@@ -258,7 +258,7 @@ public class Ventana_Calcular_Gasto_Electrico extends AppCompatActivity {
                         View layout = inflater.inflate(R.layout.toast_personalizado,
                                 (ViewGroup) findViewById(R.id.tostada));
 
-                        mensaje.setDuration(Toast.LENGTH_LONG);
+                        mensaje.setDuration(Toast.LENGTH_SHORT);
                         mensaje.setGravity(Gravity.CENTER,0,0);
                         mensaje.setView(layout);
                         mensaje.show();
@@ -304,6 +304,7 @@ public class Ventana_Calcular_Gasto_Electrico extends AppCompatActivity {
         RadioGroup rbg = findViewById(id_rbg_pot);
 
         switch (row){
+            //resto electrodomesticos
             case 1:
             case 8:
             case 9:
